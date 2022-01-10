@@ -3,7 +3,7 @@ Thinkphp5.1 扩展Addon
 
 ## 安装
 ~~~
-composer require myxland/think-addons
+composer require fuye253/think-addons
 php think addons:config
 ~~~
 
@@ -24,12 +24,12 @@ php think addons:config
 <?php
 namespace addons\test;	// 注意命名空间规范
 
-use myxland\addons\Addons;
+use fuye253\addons\Addons;
 
 /**
  * 插件测试
  */
-class Test extends Addons	// 需继承myxland\addons\Addons类
+class Test extends Addons	// 需继承fuye253\addons\Addons类
 {
 	// 该插件的基础信息
     public $info = [
@@ -126,14 +126,14 @@ class Action
     }
 }
 ```
-> 如果需要使用view模板则需要继承`\myxland\addons\library\Controller`类
+> 如果需要使用view模板则需要继承`\fuye253\addons\library\Controller`类
 > 模板文件所在位置为插件目录的view中，规则与模块中的view规则一致
 
 ```
 <?php
 namespace addons\test\controller;
 
-use myxland\addons\library\Controller;
+use fuye253\addons\library\Controller;
 
 class Action extends Controller
 {
