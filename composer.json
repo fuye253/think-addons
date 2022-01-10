@@ -1,0 +1,25 @@
+{
+    "name": "fuye253/think-addons",
+    "description": "Thinkphp 5.1 Addons Library",
+    "type": "think-extend",
+    "license": "Apache-2.0",
+    "version": "1.0",
+    "authors": [{
+        "name": "fy253",
+        "email": "fuye253@gmail.com",
+        "homepage": "https://github.com/fuye253/think-addons.git"
+    }],
+    "require": {
+        "php": ">=5.6.0",
+        "topthink/think-helper": ">=1.0.4",
+        "topthink/think-installer": ">=1.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "fuye253\\addons\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}
